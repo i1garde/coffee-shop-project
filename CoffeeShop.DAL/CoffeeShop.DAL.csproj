@@ -48,16 +48,34 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Abstract\ICoffeeMachineRepository.cs" />
+        <Compile Include="Abstract\IGenericRepository.cs" />
+        <Compile Include="Abstract\IIngredientInCoffeeMachineRepository.cs" />
+        <Compile Include="Abstract\IIngredientInRecipeRepository.cs" />
+        <Compile Include="Abstract\IIngredientRepository.cs" />
+        <Compile Include="Abstract\IOrderRepository.cs" />
+        <Compile Include="Abstract\IRecipeRepository.cs" />
+        <Compile Include="Abstract\IUnitOfWork.cs" />
         <Compile Include="CoffeeShopDBContext.cs" />
+        <Compile Include="Impl\CoffeeMachineRepository.cs" />
+        <Compile Include="Impl\GenericRepository.cs" />
+        <Compile Include="Impl\IngredientInCoffeeMachineRepository.cs" />
+        <Compile Include="Impl\IngredientInRecipeRepository.cs" />
+        <Compile Include="Impl\IngredientRepository.cs" />
+        <Compile Include="Impl\OrderRepository.cs" />
+        <Compile Include="Impl\RecipeRepository.cs" />
+        <Compile Include="Impl\UnitOfWork.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Abstract" />
-      <Folder Include="Impl" />
     </ItemGroup>
     <ItemGroup>
       <None Include="App.config" />
       <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\CoffeeShop.DAL.Entities\CoffeeShop.DAL.Entities.csproj">
+        <Project>{2b325a79-4991-44da-aaa3-3c99dc62dc5b}</Project>
+        <Name>CoffeeShop.DAL.Entities</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

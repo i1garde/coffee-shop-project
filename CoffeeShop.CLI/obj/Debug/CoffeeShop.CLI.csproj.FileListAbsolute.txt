@@ -1,0 +1,6 @@
+D:\Code\CSharp\CoffeeShopAutomatization\CoffeeShop.CLI\bin\Debug\CoffeeShop.CLI.exe
+D:\Code\CSharp\CoffeeShopAutomatization\CoffeeShop.CLI\bin\Debug\CoffeeShop.CLI.pdb
+D:\Code\CSharp\CoffeeShopAutomatization\CoffeeShop.CLI\obj\Debug\CoffeeShop.CLI.csprojAssemblyReference.cache
+D:\Code\CSharp\CoffeeShopAutomatization\CoffeeShop.CLI\obj\Debug\CoffeeShop.CLI.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\CoffeeShopAutomatization\CoffeeShop.CLI\obj\Debug\CoffeeShop.CLI.exe
+D:\Code\CSharp\CoffeeShopAutomatization\CoffeeShop.CLI\obj\Debug\CoffeeShop.CLI.pdb
