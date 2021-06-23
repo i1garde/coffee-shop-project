@@ -6,6 +6,5 @@ namespace CoffeeShop.BL.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<IngredientsInRecipeModel> RecipeIngredients { get; set; }
     }
 }

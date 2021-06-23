@@ -8,6 +8,7 @@ namespace CoffeeShop.DAL
         public CoffeeShopDBContext() : base("CoffeeShopDB") { }
         
         public DbSet<CoffeeMachineEntity> CoffeeMachine { get; set; }
+        public DbSet<RecipeInCoffeeMachineEntity> RecipeInCoffeeMachine { get; set; }
         public DbSet<IngredientEntity> Ingredient { get; set; }
         public DbSet<IngredientsInRecipeEntity> IngredientsInRecipe { get; set; }
         public DbSet<IngredientsInCoffeeMachineEntity> IngredientsInCoffeeMachine { get; set; }

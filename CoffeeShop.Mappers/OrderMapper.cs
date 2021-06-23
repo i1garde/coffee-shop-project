@@ -10,8 +10,8 @@ namespace CoffeeShop.Mappers
             return new OrderEntity
             {
                 Id = model.Id,
-                RecipeId = model.RecipeId,
                 Recipe = model.Recipe.toEntity(),
+                OrderTime = model.OrderTime
             };
         }
     
@@ -20,8 +20,8 @@ namespace CoffeeShop.Mappers
             return new OrderModel
             {
                 Id = entity.Id,
-                RecipeId = entity.RecipeId,
                 Recipe = entity.Recipe.toModel(),
+                OrderTime = entity.OrderTime
             };
         }
     }

@@ -10,6 +10,7 @@ namespace CoffeeShop.DAL.Impl
         
         public UnitOfWork(CoffeeShopDBContext context,
             ICoffeeMachineRepository coffeeMachineRepository,
+            IRecipeInCoffeeMachineRepository recipeInCoffeeMachineRepository,
             IIngredientInCoffeeMachineRepository ingredientInCoffeeMachineRepository,
             IRecipeRepository recipeRepository,
             IOrderRepository orderRepository,
@@ -19,6 +20,7 @@ namespace CoffeeShop.DAL.Impl
             this._context = context;
             this.isDisposed = false;
             CoffeeMachineRepository = coffeeMachineRepository;
+            RecipeInCoffeeMachineRepository = recipeInCoffeeMachineRepository;
             IngredientInCoffeeMachineRepository = ingredientInCoffeeMachineRepository;
             RecipeRepository = recipeRepository;
             OrderRepository = orderRepository;
@@ -42,6 +44,7 @@ namespace CoffeeShop.DAL.Impl
         }
 
         public ICoffeeMachineRepository CoffeeMachineRepository { get; private set; }
+        public IRecipeInCoffeeMachineRepository RecipeInCoffeeMachineRepository { get; private set; }
         public IIngredientInCoffeeMachineRepository IngredientInCoffeeMachineRepository { get; private set; }
         public IRecipeRepository RecipeRepository { get; private set; }
         public IOrderRepository OrderRepository { get; private set; }

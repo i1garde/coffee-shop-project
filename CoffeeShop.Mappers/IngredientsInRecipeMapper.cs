@@ -10,9 +10,7 @@ namespace CoffeeShop.Mappers
             return new IngredientsInRecipeEntity
             {
                 Id = model.Id,
-                RecipeId = model.RecipeId,
                 Recipe = model.Recipe.toEntity(),
-                IngredientId = model.IngredientId,
                 Ingredient = model.Ingredient.toEntity(),
                 IngredientAmount = model.IngredientAmount
             };
@@ -23,9 +21,7 @@ namespace CoffeeShop.Mappers
             return new IngredientsInRecipeModel
             {
                 Id = entity.Id,
-                RecipeId = entity.RecipeId,
                 Recipe = entity.Recipe.toModel(),
-                IngredientId = entity.IngredientId,
                 Ingredient = entity.Ingredient.toModel(),
                 IngredientAmount = entity.IngredientAmount
             };
