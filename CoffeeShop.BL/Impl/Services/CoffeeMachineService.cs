@@ -5,6 +5,7 @@ using CoffeeShop.BL.Models;
 using CoffeeShop.DAL;
 using CoffeeShop.DAL.Abstract;
 using CoffeeShop.DAL.Impl;
+using CoffeeShop.Mappers;
 
 namespace CoffeeShop.BL.Impl.Services
 {
@@ -19,8 +20,13 @@ namespace CoffeeShop.BL.Impl.Services
 
         public List<CoffeeMachineModel> GetAll()
         {
-            //_unitOfWork.CoffeeMachineRepository.GetAll()
-            return null;
+            List<CoffeeMachineModel> coffeeMachineModels =
+                new List<CoffeeMachineModel>();
+            foreach (var i in _unitOfWork.CoffeeMachineRepository.GetAll())
+            {
+                coffeeMachineModels.Add(i.toModel());
+            }
+            return coffeeMachineModels;
         }
 
         public TimeSpan GetTimeToRefreshIngredients(int id, DateTime firstDate, DateTime lastDate)

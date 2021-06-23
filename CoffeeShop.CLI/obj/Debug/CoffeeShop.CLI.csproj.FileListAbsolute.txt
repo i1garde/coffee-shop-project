@@ -34,3 +34,11 @@ C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\EntityFramewor
 C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\CoffeeShop.DAL.Entities.pdb
 C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\obj\Debug\CoffeeShop.CLI.exe.config
 C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\obj\Debug\CoffeeShop.CLI.csproj.CopyComplete
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\CoffeeShop.Mappers.dll
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\CoffeeShop.Mappers.pdb
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\CoffeeShop.BL.Models.dll.config
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\CoffeeShop.BL.dll.config
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\CoffeeShop.DAL.Entities.dll.config
+C:\Trash\Code\CSharp\coffee-shop-project\CoffeeShop.CLI\bin\Debug\CoffeeShop.Mappers.dll.config
