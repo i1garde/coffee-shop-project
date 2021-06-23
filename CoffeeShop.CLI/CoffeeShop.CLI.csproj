@@ -59,6 +59,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Applicaltion.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
@@ -66,6 +67,10 @@
       <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\CoffeeShop.BL.Models\CoffeeShop.BL.Models.csproj">
+        <Project>{423a783a-64a7-4a5c-89d7-4d1cb51ea6ae}</Project>
+        <Name>CoffeeShop.BL.Models</Name>
+      </ProjectReference>
       <ProjectReference Include="..\CoffeeShop.BL\CoffeeShop.BL.csproj">
         <Project>{bb723ab8-0d12-4183-b195-e3cab4d11618}</Project>
         <Name>CoffeeShop.BL</Name>
