@@ -7,6 +7,7 @@ namespace CoffeeShop.Mappers
 {
     public static class CoffeeMachineMapper
     {
+        static Random random = new Random();
         public static CoffeeMachineEntity toEntity(this CoffeeMachineModel model)
         {
             return new CoffeeMachineEntity
@@ -18,10 +19,12 @@ namespace CoffeeShop.Mappers
 
         public static CoffeeMachineModel toModel(this CoffeeMachineEntity entity)
         {
-            return new CoffeeMachineModel
+            return new CoffeeMachineModel()
             {
                 Id = entity.Id,
-                Name = entity.Name
+                Name = entity.Name,
+                PlaceCoef = Convert.ToSingle(random.Next(50, 150)) / 100,
+                PopularityCoef = Convert.ToSingle(random.Next(50, 150)) / 100
             };
         }
     }

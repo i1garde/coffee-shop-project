@@ -9,6 +9,5 @@ namespace CoffeeShop.DAL.Entities
         public virtual List<RecipeEntity> Recipes { get; set; }
         public virtual List<OrderEntity> Orders { get; set; }
         public virtual List<IngredientsInCoffeeMachineEntity> Ingredients { get; set; }
-        //TODO: Implement Place and Popularity fields
     }
 }

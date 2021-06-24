@@ -28,9 +28,12 @@ namespace CoffeeShop.CLI
                 serviceProvider.GetRequiredService<ICoffeeMachineService>();
             List<CoffeeMachineModel> coffeeMachineModels =
                 coffeeMachineService.GetAll();
+            Place a;
             foreach (var coffeeMachine in coffeeMachineModels)
             {
-                Console.WriteLine(coffeeMachine.Name);
+                Console.WriteLine($"Name: {coffeeMachine.Name} " +
+                                  $"Place: {coffeeMachine.PlaceCoef} " +
+                                  $"Popularity: {coffeeMachine.PopularityCoef} ");
             }
         }
     }

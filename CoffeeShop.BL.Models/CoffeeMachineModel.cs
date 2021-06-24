@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace CoffeeShop.BL.Models
 {
@@ -6,5 +7,11 @@ namespace CoffeeShop.BL.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public float PlaceCoef { get; set; }
+        public float PopularityCoef { get; set; }
+        public CoffeeMachineModel()
+        {
+            
+        }
     }
 }
