@@ -9,9 +9,9 @@ namespace CoffeeShop.DAL
 {
     public class CoffeeShopDBContext : DbContext
     {
-        public CoffeeShopDBContext() : base(NpgSqlConfiguration.GetDatabaseConnection(), true)
+        public CoffeeShopDBContext() : base("name=CoffeeShopDBConnectionString")
         {
-            Database.SetInitializer(new NullDatabaseInitializer<CoffeeShopDBContext>());
+            
         }
         
         public DbSet<CoffeeMachineEntity> CoffeeMachine { get; set; }
