@@ -1,10 +1,11 @@
-﻿using CoffeeShop.DAL.Entities;
+﻿using System.Collections.Generic;
+using CoffeeShop.DAL.Entities;
 
 namespace CoffeeShop.DAL.Abstract
 {
     public interface IIngredientInRecipeRepository 
-        : IGenericRepository<IngredientsInRecipeEntity, int>
+        : IGenericRepository<IngredientInRecipeEntity, int>
     {
-        
+        List<IngredientInRecipeEntity> GetAllByRecipeId(int id);
     }
 }

@@ -97,8 +97,18 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Abstract\Services\ICoffeeMachineService.cs" />
+        <Compile Include="Abstract\Services\IIngredientInCoffeeMachineService.cs" />
+        <Compile Include="Abstract\Services\IIngredientService.cs" />
+        <Compile Include="Abstract\Services\IIngredientInRecipeService.cs" />
+        <Compile Include="Abstract\Services\IOrderService.cs" />
+        <Compile Include="Abstract\Services\IRecipeInCoffeeMachineService.cs" />
         <Compile Include="BLDependencyInstaller.cs" />
         <Compile Include="Impl\Services\CoffeeMachineService.cs" />
+        <Compile Include="Impl\Services\IngredientInCoffeeMachineService.cs" />
+        <Compile Include="Impl\Services\IngredientInRecipeService.cs" />
+        <Compile Include="Impl\Services\IngredientService.cs" />
+        <Compile Include="Impl\Services\OrderService.cs" />
+        <Compile Include="Impl\Services\RecipeInCoffeeMachineService.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

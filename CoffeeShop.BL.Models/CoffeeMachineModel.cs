@@ -9,9 +9,5 @@ namespace CoffeeShop.BL.Models
         public string Name { get; set; }
         public float PlaceCoef { get; set; }
         public float PopularityCoef { get; set; }
-        public CoffeeMachineModel()
-        {
-            
-        }
     }
 }

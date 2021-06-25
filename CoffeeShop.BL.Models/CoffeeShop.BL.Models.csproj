@@ -98,8 +98,8 @@
     <ItemGroup>
         <Compile Include="CoffeeMachineModel.cs" />
         <Compile Include="IngredientModel.cs" />
-        <Compile Include="IngredientsInCoffeeMachineModel.cs" />
-        <Compile Include="IngredientsInRecipeModel.cs" />
+        <Compile Include="IngredientInCoffeeMachineModel.cs" />
+        <Compile Include="IngredientInRecipeModel.cs" />
         <Compile Include="OrderModel.cs" />
         <Compile Include="Place.cs" />
         <Compile Include="Popularity.cs" />

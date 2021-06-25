@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Transactions.Configuration;
 using CoffeeShop.BL;
 using CoffeeShop.BL.Abstract.Services;
 using CoffeeShop.BL.Models;
@@ -21,20 +22,46 @@ namespace CoffeeShop.CLI
             serviceProvider = services.BuildServiceProvider();
         }
 
-        public void Run()
+        public void ShowMenu()
         {
-            Console.WriteLine("Run-run-run!!!");
+            Console.WriteLine("Choose one option:");
+            Console.WriteLine("1) Ingredients usage");
+        }
+
+        public void AddCoffeeMachine(CoffeeMachineModel coffeeMachineModel)
+        {
+            ICoffeeMachineService coffeeMachineService = 
+                serviceProvider.GetRequiredService<ICoffeeMachineService>();
+            coffeeMachineService.Add(coffeeMachineModel);
+        }
+
+        public CoffeeMachineModel ChooseCoffeeMachine()
+        {
             ICoffeeMachineService coffeeMachineService = 
                 serviceProvider.GetRequiredService<ICoffeeMachineService>();
             List<CoffeeMachineModel> coffeeMachineModels =
                 coffeeMachineService.GetAll();
-            Place a;
+            int i = 0;
+            
             foreach (var coffeeMachine in coffeeMachineModels)
             {
-                Console.WriteLine($"Name: {coffeeMachine.Name} " +
-                                  $"Place: {coffeeMachine.PlaceCoef} " +
-                                  $"Popularity: {coffeeMachine.PopularityCoef} ");
+                i++;
+                Console.WriteLine($"{i} - Name: {coffeeMachine.Name}");
             }
+            Console.Write("Choose Coffee Machine: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(num);
+            
+            return coffeeMachineModels[num - 1];
+        }
+
+        public void IngredientUsage()
+        {
+            ICoffeeMachineService coffeeMachineService = 
+                serviceProvider.GetRequiredService<ICoffeeMachineService>();
+            List<int> result = 
+                coffeeMachineService.GetTimeToRefreshIngredients
+                    (ChooseCoffeeMachine(), Convert.ToDateTime("15.04.2002"), Convert.ToDateTime("21.04.2002"));
         }
     }
 }
