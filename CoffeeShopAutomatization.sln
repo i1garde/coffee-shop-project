@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.BL", "CoffeeShop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.Mappers", "CoffeeShop.Mappers\CoffeeShop.Mappers.csproj", "{05099637-EEAB-4034-8A51-8E33D8F00275}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop.WPF", "CoffeeShop.WPF\CoffeeShop.WPF.csproj", "{DFCE16C1-25B2-4DDF-B7C1-1B548A716215}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{05099637-EEAB-4034-8A51-8E33D8F00275}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05099637-EEAB-4034-8A51-8E33D8F00275}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05099637-EEAB-4034-8A51-8E33D8F00275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCE16C1-25B2-4DDF-B7C1-1B548A716215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCE16C1-25B2-4DDF-B7C1-1B548A716215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCE16C1-25B2-4DDF-B7C1-1B548A716215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCE16C1-25B2-4DDF-B7C1-1B548A716215}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
