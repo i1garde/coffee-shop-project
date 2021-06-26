@@ -96,14 +96,22 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CoffeeMachineMapper.cs" />
-        <Compile Include="IngredientMapper.cs" />
-        <Compile Include="IngredientsInCoffeeMachineMapper.cs" />
-        <Compile Include="IngredientsInRecipeMapper.cs" />
-        <Compile Include="OrderMapper.cs" />
+        <Compile Include="Abstract\ICoffeeMachineMapper.cs" />
+        <Compile Include="Abstract\IIngredientInCoffeeMachineMapper.cs" />
+        <Compile Include="Abstract\IIngredientInRecipeMapper.cs" />
+        <Compile Include="Abstract\IIngredientMapper.cs" />
+        <Compile Include="Abstract\IMapper.cs" />
+        <Compile Include="Abstract\IOrderMapper.cs" />
+        <Compile Include="Abstract\IRecipeInCoffeeMachineMapper.cs" />
+        <Compile Include="Abstract\IRecipeMapper.cs" />
+        <Compile Include="Impl\CoffeeMachineMapper.cs" />
+        <Compile Include="Impl\IngredientInCoffeeMachineMapper.cs" />
+        <Compile Include="Impl\IngredientInRecipeMapper.cs" />
+        <Compile Include="Impl\IngredientMapper.cs" />
+        <Compile Include="Impl\OrderMapper.cs" />
+        <Compile Include="Impl\RecipeInCoffeeMachineMapper.cs" />
+        <Compile Include="Impl\RecipeMapper.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="RecipeInCoffeeMachineMapper.cs" />
-        <Compile Include="RecipeMapper.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\CoffeeShop.BL.Models\CoffeeShop.BL.Models.csproj">

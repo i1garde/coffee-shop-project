@@ -6,7 +6,8 @@ namespace CoffeeShop.BL.Abstract.Services
 {
     public interface ICoffeeMachineService
     {
+        void Add(CoffeeMachineModel coffeeMachineModel);
         List<CoffeeMachineModel> GetAll();
-        TimeSpan GetTimeToRefreshIngredients(int id, DateTime firstDate, DateTime lastDate);
+        List<int> GetTimeToRefreshIngredients(CoffeeMachineModel coffeeMachine, DateTime start, DateTime end);
     }
 }

@@ -2,6 +2,7 @@
 using CoffeeShop.BL;
 using CoffeeShop.BL.Abstract.Services;
 using CoffeeShop.BL.Impl.Services;
+using CoffeeShop.BL.Models;
 using CoffeeShop.DAL;
 using CoffeeShop.DAL.Abstract;
 using CoffeeShop.DAL.Impl;
@@ -15,7 +16,9 @@ namespace CoffeeShop.CLI
         public static void Main(string[] args)
         {
             Applicaltion app = new Applicaltion();
-            app.Run();
+            app.ShowMenu();
+            //CoffeeMachineModel coffeeMachine = app.ChooseCoffeeMachine();
+            app.IngredientUsage();
         }
     }
 }

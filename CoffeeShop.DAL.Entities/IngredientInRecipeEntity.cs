@@ -1,6 +1,6 @@
 ﻿namespace CoffeeShop.DAL.Entities
 {
-    public class IngredientsInRecipeEntity : BaseEntity<int>
+    public class IngredientInRecipeEntity : BaseEntity<int>
     {
         public int RecipeId { get; set; }
         public RecipeEntity Recipe { get; set; }

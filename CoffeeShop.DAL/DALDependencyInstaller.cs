@@ -1,4 +1,5 @@
-﻿using CoffeeShop.DAL.Abstract;
+﻿using System.Data.Entity;
+using CoffeeShop.DAL.Abstract;
 using CoffeeShop.DAL.Impl;
 using Microsoft.Extensions.DependencyInjection;
 
