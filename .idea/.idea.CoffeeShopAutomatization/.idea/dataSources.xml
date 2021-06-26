@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Microsoft SQL Server (jTds) - CoffeeShopDB@DESKTOP-J94F6RO" uuid="8dd77c4e-466e-490c-a5cf-a247b9a199d3">
+    <data-source source="LOCAL" name="Microsoft SQL Server (jTds) - CoffeeShopDB-ByConnectionString@DESKTOP-J94F6RO" uuid="8dd77c4e-466e-490c-a5cf-a247b9a199d3">
       <driver-ref>sqlserver.jtds</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:jtds:sqlserver://DESKTOP-J94F6RO:1433/CoffeeShopDB</jdbc-url>
+      <jdbc-url>jdbc:jtds:sqlserver://DESKTOP-MMGBIEG:1433/CoffeeShopDB</jdbc-url>
       <jdbc-additional-properties>
         <property name="DOMAIN" value="DESKTOP-J94F6RO" />
       </jdbc-additional-properties>
