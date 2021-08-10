@@ -19,8 +19,8 @@ namespace CoffeeShop.Mappers.Impl
             return new RecipeInCoffeeMachineModel
             {
                 Id = entity.Id,
-                Recipe = _recipeMapper.ToModel(entity.Recipe),
-                CoffeeMachine = _coffeeMachineMapper.ToModel(entity.CoffeeMachine)
+                //Recipe = _recipeMapper.ToModel(entity.Recipe), // entity is null
+                //CoffeeMachine = _coffeeMachineMapper.ToModel(entity.CoffeeMachine)
             };
         }
 
@@ -29,8 +29,8 @@ namespace CoffeeShop.Mappers.Impl
             return new RecipeInCoffeeMachineEntity
             {
                 Id = model.Id,
-                Recipe = _recipeMapper.ToEntity(model.Recipe),
-                CoffeeMachine = _coffeeMachineMapper.ToEntity(model.CoffeeMachine)
+                //Recipe = _recipeMapper.ToEntity(model.Recipe),
+                //CoffeeMachine = _coffeeMachineMapper.ToEntity(model.CoffeeMachine)
             };
         }
     }

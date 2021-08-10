@@ -23,7 +23,7 @@ namespace CoffeeShop.BL.Impl.Services
         public List<RecipeInCoffeeMachineModel> GetRecipes(int id)
         {
             List<RecipeInCoffeeMachineEntity> temp =
-                _unitOfWork.RecipeInCoffeeMachineRepository.GetAllByCoffeeMachineId(id);
+                _unitOfWork.RecipeInCoffeeMachineRepository.GetAllByCoffeeMachineId(id); //? list is not null (ok)
             List<RecipeInCoffeeMachineModel> modelsList =
                 new List<RecipeInCoffeeMachineModel>();
             for (int i = 0; i < temp.Count; i++)

@@ -60,6 +60,7 @@ namespace CoffeeShop.BL.Impl.Services
         {
             List<RecipeInCoffeeMachineModel> recipeInCoffeeMachine = 
                 _recipeInCoffeeMachineService.GetRecipes(coffeeMachine.Id);
+            
             int recipesInCoffeMachine = recipeInCoffeeMachine.Count();
 
             List<IngredientInCoffeeMachineModel> startingState =
